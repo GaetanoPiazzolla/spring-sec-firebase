@@ -1,0 +1,18 @@
+spring:
+  threads:
+    virtual:
+      enabled: true
+
+firebase:
+  url: ${GOOGLE_ADMIN_CONFIG_DATABASE_URL}
+  type: ${GOOGLE_ADMIN_CONFIG_TYPE}
+  project-id: ${GOOGLE_ADMIN_CONFIG_PROJECT_ID}
+  private-key: ${GOOGLE_ADMIN_CONFIG_PRIVATE_KEY}
+  private-key-id: ${GOOGLE_ADMIN_CONFIG_PRIVATE_KEY_ID}
+  client-email: ${GOOGLE_ADMIN_CONFIG_CLIENT_EMAIL}
+  client-id: ${GOOGLE_ADMIN_CONFIG_CLIENT_ID}
+  token-uri: ${GOOGLE_ADMIN_CONFIG_TOKEN_URI}
+
+logging:
+  level:
+    org.springframework.security: TRACE
